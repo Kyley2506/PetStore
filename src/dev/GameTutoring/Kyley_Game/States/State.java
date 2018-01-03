@@ -1,0 +1,33 @@
+package dev.GameTutoring.Kyley_Game.States;
+
+import java.awt.Graphics;
+
+import dev.GameTutoring.Kyley_Game.Game;
+
+
+public abstract class State {
+	
+	
+	private static State currentState = null;
+	
+	public static void setState(State state){
+		currentState = state;
+	}
+	
+	public static State getState(){
+		return currentState;
+	}
+	
+	
+	//CLASS
+	protected Game game;
+	
+	public State(Game game){
+		this.game = game;
+	}
+	
+	public abstract void tick(double deltaTimeUpdate);
+	
+	public abstract void render(Graphics g, double deltaTimeUpdate);
+	
+}
