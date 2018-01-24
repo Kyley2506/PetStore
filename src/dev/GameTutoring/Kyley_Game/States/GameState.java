@@ -10,15 +10,12 @@ import dev.GameTutoring.Kyley_Game.Enum.Restroom;
 import dev.GameTutoring.Kyley_Game.Enum.Thirst;
 
 public class GameState extends State {
-	
-	Bird f;
-	Bird Limeade;
+	Bird Kiwi;
+
 	
 	public GameState(Game game) {
 		super(game);
-		f = new Bird(3, Hunger.SUPER_HUNGERY, Thirst.QUINCHED, Restroom.UNCLEAN, Bird_Type.YELLOW_BIRD);
-		Limeade = new Bird(10, Hunger.PECKISH, Thirst.QUINCHED, Restroom.CLEAN, Bird_Type.GREEN_BIRD);
-	
+		Kiwi = new Bird(15, Hunger.FULL, Thirst.QUINCHED, Restroom.CLEAN, Bird_Type.GREEN_BIRD, 1365/2, 710/2);
 	}
 
 	@Override
@@ -29,9 +26,8 @@ public class GameState extends State {
 
 	@Override
 	public void render(Graphics g, double deltaTimeUpdate) {
+		g.drawImage(Kiwi.animalPictures, Kiwi.x, Kiwi.y, null);
 		// TODO Auto-generated method stub
-		g.drawImage(f.animalPictures, 1365/2, 710/2, null);
-		g.drawImage(Limeade.animalPictures, 1065, 710/5, null);
 	}
 
 }

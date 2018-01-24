@@ -6,8 +6,8 @@ import dev.GameTutoring.Kyley_Game.Enum.Restroom;
 import dev.GameTutoring.Kyley_Game.Enum.Thirst;
 
 public class Cat extends Animals{
-public Cat(int price, Hunger hunger, Thirst thirst, Restroom restroom) {
-		super(price, hunger, thirst, restroom);
+public Cat(int price, Hunger hunger, Thirst thirst, Restroom restroom, int x, int y ) {
+		super(price, hunger, thirst, restroom, x, y);
 		// TODO Auto-generated constructor stub
 	}
 

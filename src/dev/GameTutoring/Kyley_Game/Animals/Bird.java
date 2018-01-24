@@ -11,8 +11,8 @@ import dev.GameTutoring.Kyley_Game.Enum.Restroom;
 import dev.GameTutoring.Kyley_Game.Enum.Thirst;
 
 public class Bird extends Animals{
-public Bird(int price, Hunger hunger, Thirst thirst, Restroom restroom, Bird_Type bird_type) {
-		super(price, hunger, thirst, restroom);
+public Bird(int price, Hunger hunger, Thirst thirst, Restroom restroom, Bird_Type bird_type, int x, int y ) {
+		super(price, hunger, thirst, restroom, x, y);
 		this.bird_type = bird_type;
 		
 		switch(bird_type) {

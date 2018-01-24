@@ -6,8 +6,8 @@ import dev.GameTutoring.Kyley_Game.Enum.Restroom;
 import dev.GameTutoring.Kyley_Game.Enum.Thirst;
 
 public class Fish extends Animals{
-public Fish(int price, Hunger hunger, Thirst thirst, Restroom restroom, Fish_Type fish_type) {
-		super(price, hunger, thirst, restroom);
+public Fish(int price, Hunger hunger, Thirst thirst, Restroom restroom, Fish_Type fish_type, int x, int y ) {
+		super(price, hunger, thirst, restroom, x, y);
 		this.fish_type = fish_type;
 		switch(fish_type) {
 		case BLUE_FISH:

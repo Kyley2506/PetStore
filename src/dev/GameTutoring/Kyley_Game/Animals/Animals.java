@@ -11,12 +11,18 @@ public	BufferedImage animalPictures;
 	Hunger hunger;
 	Thirst thirst;
 	Restroom restroom;
+	public int x, y;
 	int price;
 	
-	public Animals(int price, Hunger hunger, Thirst thirst, Restroom restroom){
+	public Animals(int price, Hunger hunger, Thirst thirst, Restroom restroom, int x, int y){
 		this.price = price;
 		this.hunger = hunger;
 		this.thirst = thirst;
 		this.restroom = restroom;
+	    this.x = x;
+	    this.y = y;
 	}
+	
+	
+	
 }
